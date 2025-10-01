@@ -84,6 +84,11 @@ body {
   box-shadow: 0 2px 16px 0 #001a1a44;
 }
 
+/* Centered content for meet-the-devs only */
+.center-content {
+  text-align: center;
+}
+
 /* Whitepaper-specific improvements */
 .container h1, .container h2, .container h3 {
   text-align: left;
