@@ -1,31 +1,75 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
+  <meta charset="UTF-8">
   <title>$DEVOPS — Dev Culture Meets Degen</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <style>
     body {
+      margin: 0;
       background: #000;
       color: #00e0ff;
       font-family: monospace;
       text-align: center;
-      padding: 50px;
     }
-    h1 { font-size: 2.5rem; }
-    p { font-size: 1.2rem; }
-    a { color: #00e0ff; text-decoration: none; }
-    .tagline { margin-top: 10px; font-style: italic; }
+    .banner img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .logo {
+      margin-top: -60px; /* pull logo slightly over banner if desired */
+    }
+    .logo img {
+      width: 160px;
+      height: auto;
+      border-radius: 50%;
+      border: 3px solid #00e0ff;
+      background: #000;
+    }
+    .tagline {
+      font-size: 1.2rem;
+      margin-top: 15px;
+      padding: 0 20px;
+    }
+    .buttons {
+      margin-top: 25px;
+    }
+    .buttons a {
+      display: inline-block;
+      margin: 0 10px;
+      padding: 10px 20px;
+      color: #00e0ff;
+      border: 2px solid #00e0ff;
+      text-decoration: none;
+      border-radius: 4px;
+      transition: all 0.2s ease;
+    }
+    .buttons a:hover {
+      background: #00e0ff;
+      color: #000;
+    }
   </style>
 </head>
 <body>
-  <h1>$DEVOPS</h1>
-  <p class="tagline">🧠 Dev culture meets degen. 🚀 Pipelines meet moon missions.</p>
-  <p>Coming soon.</p>
-  <p>
-    <a href="https://x.com/devopscoin">X</a> |
-    <~-<a href="https://t.me/YOUR_TELEGRAM">Telegram</a> -->
-  </p>
+
+  <div class="banner">
+    <img src="assets/banner.jpg" alt="Banner">
+  </div>
+
+  <div class="logo">
+    <img src="assets/logo.png" alt="$DEVOPS Logo">
+  </div>
+
+  <div class="tagline">
+    🧠 Dev culture meets degen. 🚀 Pipelines meet moon missions.
+  </div>
+
+  <div class="buttons">
+    <a href="https://x.com/YOUR_HANDLE" target="_blank">X</a>
+    <a href="https://t.me/YOUR_TELEGRAM" target="_blank">Telegram</a>
+  </div>
+
 </body>
 </html>
 
