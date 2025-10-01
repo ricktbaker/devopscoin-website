@@ -95,7 +95,7 @@ body {
 .center-content img,
 .center-content p,
 .center-content a {
-  text-align: center;
+  text-align: center !important;
   margin-left: auto;
   margin-right: auto;
 }
