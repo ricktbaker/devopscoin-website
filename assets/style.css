@@ -88,6 +88,17 @@ body {
 .center-content {
   text-align: center;
 }
+.center-content h1,
+.center-content h2,
+.center-content .role,
+.center-content .bio,
+.center-content img,
+.center-content p,
+.center-content a {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 /* Whitepaper-specific improvements */
 .container h1, .container h2, .container h3 {
