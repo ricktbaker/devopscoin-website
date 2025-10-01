@@ -78,7 +78,44 @@ body {
   max-width: 800px;
   margin: 40px auto;
   padding: 0 20px;
-  text-align: center;
+  text-align: left;
+  background: #0a0a0a;
+  border-radius: 10px;
+  box-shadow: 0 2px 16px 0 #001a1a44;
+}
+
+/* Whitepaper-specific improvements */
+.container h1, .container h2, .container h3 {
+  text-align: left;
+}
+.container ul {
+  padding-left: 1.5em;
+  margin-bottom: 1.5em;
+}
+.container ul li {
+  margin-bottom: 0.5em;
+  list-style: disc inside;
+}
+.container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  background: #111;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.container th, .container td {
+  border: 1px solid #00e0ff44;
+  padding: 12px 10px;
+  text-align: left;
+}
+.container th {
+  background: #00e0ff22;
+  color: #00e0ff;
+  font-weight: bold;
+}
+.container tr:nth-child(even) {
+  background: #0d1a1a;
 }
 h1, h2, h3 {
   color: #00e0ff;
