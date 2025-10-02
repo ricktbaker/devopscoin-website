@@ -1,93 +1,203 @@
+/* === GLOBAL === */
 body {
   margin: 0;
-  background: #000;
-  color: #00e0ff;
-  font-family: monospace;
+  background: #0a0a0a; /* dark gunmetal */
+  color: #ffffff; /* main text is clean white */
+  font-family: 'Inter', 'Poppins', 'SF Pro', sans-serif;
   text-align: center;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .banner img {
   width: 100%;
   height: auto;
   display: block;
 }
+
+/* === TYPOGRAPHY === */
+h1, h2, h3 {
+  color: #1dd3c6; /* teal accent */
+}
+
+a {
+  color: #1dd3c6;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
 .tagline {
   font-size: 1.2rem;
   margin-top: 20px;
   padding: 0 20px;
+  color: #ffffff;
 }
+
 .coming-soon {
   margin-top: 40px;
   font-size: 1.5rem;
   font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 2px;
+  color: #ffffff;
 }
+
 .recruit {
   margin-top: 20px;
   max-width: 600px;
   padding: 0 20px;
   font-size: 1rem;
   line-height: 1.5;
+  color: #e0e0e0;
 }
+
+/* === BUTTONS === */
 .buttons {
   margin-top: 30px;
 }
+
 .buttons a {
   display: inline-block;
   margin: 0 10px;
   padding: 10px 20px;
-  color: #00e0ff;
-  border: 2px solid #00e0ff;
+  color: #1dd3c6;
+  border: 2px solid #1dd3c6;
   text-decoration: none;
   border-radius: 4px;
   transition: all 0.2s ease;
 }
+
 .buttons a:hover {
-  background: #00e0ff;
+  background: #1dd3c6;
   color: #000;
 }
+
+/* === CONTRACT SECTION === */
 .ca-section {
   margin-top: 40px;
   text-align: center;
 }
+
 .ca-section h2 {
   font-size: 1.4rem;
   margin-bottom: 10px;
-  color: #00e0ff;
+  color: #1dd3c6;
 }
+
 .ca-address {
   font-size: 0.95rem;
   background: #111;
   padding: 10px 15px;
-  border: 2px solid #00e0ff;
+  border: 2px solid #1dd3c6;
   border-radius: 6px;
   display: inline-block;
   word-break: break-all;
   font-family: monospace;
-  color: #00e0ff;
+  color: #ffffff;
 }
+
 .ca-note {
   font-size: 0.8rem;
   margin-top: 8px;
   opacity: 0.8;
+  color: #cccccc;
 }
+
+/* === CONTENT CONTAINERS === */
 .container {
   max-width: 800px;
   margin: 40px auto;
   padding: 0 20px;
   text-align: left;
-  background: #0a0a0a;
+  background: #111;
   border-radius: 10px;
-  box-shadow: 0 2px 16px 0 #001a1a44;
+  box-shadow: 0 2px 16px 0 #1dd3c633; /* soft teal shadow */
 }
 
-/* Centered content for meet-the-devs only */
+.container h1, .container h2, .container h3 {
+  text-align: left;
+}
+
+.container ul {
+  padding-left: 1.5em;
+  margin-bottom: 1.5em;
+}
+
+.container ul li {
+  margin-bottom: 0.5em;
+  list-style: disc inside;
+  color: #e0e0e0;
+}
+
+.container table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1.5em 0;
+  background: #0f0f0f;
+  border-radius: 6px;
+  overflow: hidden;
+}
+
+.container th, .container td {
+  border: 1px solid #1dd3c644;
+  padding: 12px 10px;
+  text-align: left;
+  color: #e0e0e0;
+}
+
+.container th {
+  background: #1dd3c622;
+  color: #1dd3c6;
+  font-weight: bold;
+}
+
+.container tr:nth-child(even) {
+  background: #141414;
+}
+
+/* === PROFILE SECTION === */
+.profile-pic {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 3px solid #1dd3c6;
+  object-fit: cover;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.bio {
+  font-size: 1rem;
+  margin-top: 20px;
+  color: #e0e0e0;
+}
+
+/* === NAVIGATION === */
+.back-home {
+  display: inline-block;
+  margin-top: 30px;
+  padding: 10px 20px;
+  border: 2px solid #1dd3c6;
+  color: #1dd3c6;
+  text-decoration: none;
+  border-radius: 4px;
+  transition: 0.2s ease;
+}
+
+.back-home:hover {
+  background: #1dd3c6;
+  color: #000;
+}
+
+/* === CENTERED CONTENT === */
 .center-content {
   text-align: center;
 }
+
 .center-content h1,
 .center-content h2,
 .center-content .role,
@@ -98,75 +208,4 @@ body {
   text-align: center !important;
   margin-left: auto;
   margin-right: auto;
-}
-
-/* Whitepaper-specific improvements */
-.container h1, .container h2, .container h3 {
-  text-align: left;
-}
-.container ul {
-  padding-left: 1.5em;
-  margin-bottom: 1.5em;
-}
-.container ul li {
-  margin-bottom: 0.5em;
-  list-style: disc inside;
-}
-.container table {
-  width: 100%;
-  border-collapse: collapse;
-  margin: 1.5em 0;
-  background: #111;
-  border-radius: 6px;
-  overflow: hidden;
-}
-.container th, .container td {
-  border: 1px solid #00e0ff44;
-  padding: 12px 10px;
-  text-align: left;
-}
-.container th {
-  background: #00e0ff22;
-  color: #00e0ff;
-  font-weight: bold;
-}
-.container tr:nth-child(even) {
-  background: #0d1a1a;
-}
-h1, h2, h3 {
-  color: #00e0ff;
-}
-.profile-pic {
-  width: 180px;
-  height: 180px;
-  border-radius: 50%;
-  border: 3px solid #00e0ff;
-  object-fit: cover;
-  margin-top: 20px;
-  margin-bottom: 20px;
-}
-.bio {
-  font-size: 1rem;
-  margin-top: 20px;
-}
-a {
-  color: #00e0ff;
-  text-decoration: none;
-}
-a:hover {
-  text-decoration: underline;
-}
-.back-home {
-  display: inline-block;
-  margin-top: 30px;
-  padding: 10px 20px;
-  border: 2px solid #00e0ff;
-  color: #00e0ff;
-  text-decoration: none;
-  border-radius: 4px;
-  transition: 0.2s ease;
-}
-.back-home:hover {
-  background: #00e0ff;
-  color: #000;
 }
