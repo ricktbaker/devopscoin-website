@@ -14,8 +14,7 @@ body {
   width: 100%;
   height: auto;
   display: block;
-  max-height: 40vh; /* limits to 40% of viewport height */
-  object-fit: cover;
+  /* Removed max-height and object-fit to allow full width scaling */
 }
 
 /* === TYPOGRAPHY === */
