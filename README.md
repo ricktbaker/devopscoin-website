@@ -1,4 +1,4 @@
-# $DEVOPS Website
+# $DEVOPS MemeCoin Website
 
 A modern, community-driven memecoin project site built for DevOpsCoin. This static site uses Tailwind CSS for styling, SVG icons for a professional look, and a dynamic header for maintainability. Deployed via GitHub Pages.
 
