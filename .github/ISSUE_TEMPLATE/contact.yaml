@@ -1,0 +1,17 @@
+name: 💬 Contact / Feedback
+description: Ask a question, share feedback, or reach out
+title: "[Contact]: "
+labels: ["contact"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for reaching out! Please fill out the details below.
+  - type: textarea
+    id: message
+    attributes:
+      label: Message
+      description: What's up?
+      placeholder: Your question, comment, or message here...
+    validations:
+      required: true
