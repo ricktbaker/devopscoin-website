@@ -22,62 +22,81 @@
   <div id="header-placeholder"></div>
   <script src="assets/load-header.js"></script>
 
-  <div class="max-w-3xl mx-auto mt-12 p-8 bg-gray-900 rounded-xl shadow-lg">
+  <main class="max-w-3xl mx-auto mt-12 p-8 bg-gray-900 rounded-xl shadow-lg">
     <h1 class="text-3xl sm:text-4xl font-bold text-cyan-400 mb-6 flex items-center gap-2">
       <svg xmlns="http://www.w3.org/2000/svg" class="w-8 h-8 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor">
         <rect x="3" y="4" width="18" height="16" rx="2" class="fill-gray-800"/>
         <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 4v4m8-4v4M3 10h18" />
       </svg>
-      Legal Information
+      Legal & Disclosures
     </h1>
 
     <!-- Company Info -->
-    <div class="mb-8 text-gray-300">
+    <section class="mb-8 text-gray-300">
+      <h2 class="text-xl font-semibold text-cyan-400 mb-2">Business Entity Information</h2>
       <p><strong>DevOpsCoin LLC</strong></p>
-      <p>Registered in New Mexico, USA</p>
-      <p>📧 <a href="mailto:team@devopscoin.ai" class="text-cyan-400 hover:underline">team@devopscoin.ai</a></p>
-    </div>
-
-    <!-- LLC Certificate -->
-    <div class="mb-8">
-      <h2 class="text-xl font-semibold text-cyan-400 mb-2">Business Registration Certificate</h2>
-      <p class="text-gray-300 mb-4">
-        DevOpsCoin LLC is officially registered with the New Mexico Secretary of State. You can view the filed Articles of Organization below.
+      <p>Domestic Limited Liability Company</p>
+      <p>State of Formation: New Mexico, USA</p>
+      <p>Entity ID / Record #: 0008053527</p>
+      <p>Effective Date: October 3, 2025</p>
+      <p class="mt-2">
+        DevOpsCoin LLC is a legally registered business entity under the New Mexico Limited Liability Company Act (Chapter 53, Article 19, NMSA 1978).
       </p>
-      <a href="/legal/devopscoin_llc.pdf" target="_blank" class="inline-block px-4 py-2 bg-cyan-700 text-white rounded-lg font-semibold shadow hover:bg-cyan-400 transition">
+    </section>
+
+    <!-- Certificate PDF Link -->
+    <section class="mb-8">
+      <h2 class="text-xl font-semibold text-cyan-400 mb-2">Certificate of Organization</h2>
+      <p class="text-gray-300 mb-4">
+        For verification purposes, the official Certificate of Organization issued by the New Mexico Secretary of State is available below.
+      </p>
+      <a href="assets/devopscoin_llc.pdf" target="_blank" class="inline-block px-4 py-2 bg-cyan-700 text-white rounded-lg font-semibold shadow hover:bg-cyan-400 transition">
         View DevOpsCoin LLC Certificate (PDF)
       </a>
-    </div>
+    </section>
 
-    <!-- Disclaimer -->
-    <div class="mt-10 text-sm text-gray-400 border-t border-gray-700 pt-4">
-      <h2 class="text-lg font-semibold text-cyan-400 mb-2">Token Disclaimer</h2>
+    <!-- Disclaimers -->
+    <section class="mt-10 text-sm text-gray-400 border-t border-gray-700 pt-4 leading-relaxed">
+      <h2 class="text-lg font-semibold text-cyan-400 mb-2">Legal Disclaimers</h2>
       <p>
-        DevOpsCoin is a community-driven project. DevOpsCoin LLC does not provide investment advice, and the DevOpsCoin token does not represent equity, ownership, or financial interest in the company. Participation is at your own risk. Always do your own research.
+        The information provided on this website, including any pages or linked documents, is for informational purposes only and does not constitute financial, investment, legal, or tax advice. DevOpsCoin LLC makes no representations or warranties of any kind, express or implied, regarding the accuracy or completeness of any information on this site.
       </p>
-      <p class="mt-2">
-        The information provided on this website is for informational purposes only and is not intended as financial, legal, or investment advice.
+      <p class="mt-3">
+        The DevOpsCoin token does not represent equity, ownership, voting rights, or financial interest in DevOpsCoin LLC or any affiliated entity. Tokens are not investment contracts and should not be considered securities. Participation in the DevOpsCoin ecosystem is entirely at your own risk.
       </p>
-    </div>
+      <p class="mt-3">
+        DevOpsCoin LLC is not a financial institution, broker, or investment advisor. No regulatory body has reviewed or approved any content on this site.
+      </p>
+      <p class="mt-3">
+        By accessing or using this website, you agree to the terms outlined in this Legal & Disclosures page.
+      </p>
+    </section>
 
     <!-- Back to Home -->
-    <a href="index.html" class="px-4 py-2 bg-cyan-700 text-white rounded-lg font-semibold shadow hover:bg-cyan-400 transition inline-block mt-8 flex items-center gap-2 justify-center">
-      <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
-        <rect x="3" y="4" width="18" height="16" rx="2" class="fill-gray-800"/>
-        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 4v4m8-4v4M3 10h18" />
-      </svg>
-      Back to Home
-    </a>
+    <div class="mt-10">
+      <a href="index.html" class="px-4 py-2 bg-cyan-700 text-white rounded-lg font-semibold shadow hover:bg-cyan-400 transition inline-block flex items-center gap-2 justify-center">
+        <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5 text-white" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+          <rect x="3" y="4" width="18" height="16" rx="2" class="fill-gray-800"/>
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 4v4m8-4v4M3 10h18" />
+        </svg>
+        Back to Home
+      </a>
+    </div>
+  </main>
 
-  </div>
+  <!-- Footer -->
+  <footer class="mt-16 border-t border-gray-800 py-4 text-sm text-gray-400 text-center">
+    <p>
+      © <span id="year"></span> DevOpsCoin LLC · 
+      <a href="mailto:team@devopscoin.ai" class="text-cyan-400 hover:underline">team@devopscoin.ai</a>
+    </p>
+  </footer>
 
-  <div id="footer-placeholder"></div>
   <script>
-    fetch('assets/footer.html')
-      .then(r => r.text())
-      .then(html => {
-        document.getElementById('footer-placeholder').innerHTML = html;
-      });
+    // Auto-fill current year in footer
+    document.getElementById('year').textContent = new Date().getFullYear();
   </script>
+
 </body>
 </html>
+
